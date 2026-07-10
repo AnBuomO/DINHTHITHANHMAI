@@ -612,7 +612,7 @@ scene.add(planet);
 // ---- TẠO CÁC VÒNG CHỮ QUAY QUANH HÀNH TINH ----
 const ringTexts = [
   'XIN LỖI VÌ NHỮNG LẦN LÀM EM BUỒN',
-  "THƯƠNG MỖI EM NGUYÊN",
+  "THƯƠNG MỖI EM MAI <3",
   "TIENDEV",
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
