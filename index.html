@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vũ trụ tình yêu </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+        "three/addons/controls/OrbitControls.js": "https://unpkg.com/three@0.152.2/examples/jsm/controls/OrbitControls.js",
+        "three/examples/jsm/loaders/FontLoader.js": "https://unpkg.com/three@0.152.2/examples/jsm/loaders/FontLoader.js",
+        "three/examples/jsm/geometries/TextGeometry.js": "https://unpkg.com/three@0.152.2/examples/jsm/geometries/TextGeometry.js"
+      }
+    }
+    </script>
+</head>
+
+<body>
+  <div id="password-gate">
+    <div class="password-box">
+      <h1>Vũ Trụ Tình Yêu</h1>
+      <p id="gate-question">Mai thích Hello Kitty khum? 💕</p>
+      <div id="choice-buttons">
+        <button type="button" id="btn-co">Có</button>
+        <button type="button" id="btn-khong">Không</button>
+        <button type="button" id="btn-thichanh" class="hidden">Thích Anh cơ 💖</button>
+      </div>
+      <p id="password-error">Hong được đâu, chọn lại đi!</p>
+    </div>
+  </div>
+
+  <audio id="bg-music" loop preload="auto">
+   <source src="vutru.mp3" type="audio/mpeg" />
+  </audio>
+    <div id="container"></div>
+    <div id="landscape-warning">
+      <div class="warning-content">
+        <div class="rotate-icon"></div>
+        <h1>NHỚ EM</h1>
+        <h1>Tinh Cầu</h1>
+        <div class="stars-bg"></div>
+      </div>
+    </div>
+    <div id="dark-overlay"></div>
+    <div id="info">
+      
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="password.js"></script>
+</body>
+</html>
